@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montclair Building Reservations</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            margin: 20px;
+            background-color: pink; /* Set the background color to pink */
+        }
+
+        header {
+            text-align: right;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+            background-color: white; /* Set the form background color to white */
+            padding: 20px;
+            border-radius: 10px; /* Add rounded corners to the form */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: lightblue; /* Set the submit button background color to light blue */
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <p>By: Amber Wilson</p>
+    </header>
+
+    <h1>Montclair Building Reservations</h1>
+
+    <form id="webForm" action="#" method="post">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required autofocus>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" pattern=".+@montclair\.edu" title="Sorry please use a valid Montclair.edu email address" required>
+
+        <label for="building">Choose the Building:</label>
+        <select id="building" name="building" required>
+            <option value="CCIS" selected>CCIS</option>
+            <option value="CELS">CELS</option>
+            <option value="Richardson">Richardson Hall</option>
+            <option value="Science">Science Hall</option>
+        </select>
+
+        <label for="requestDate">Request Date:</label>
+        <input type="date" id="requestDate" name="requestDate" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
+
